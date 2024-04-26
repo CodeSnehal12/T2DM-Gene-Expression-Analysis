@@ -1,0 +1,46 @@
+Functional Analysis:
+Functional and Pathway Enrichment Analysis:
+Three categories of GO enrichment results and KEGG pathway analysis were performed to elucidate the biological processes and pathways associated with the differentially
+expressed genes (DEGs).
+A. Gene Ontology (GO) Enrichment Analysis:
+1. Biological Process (BP):
+- DEGs were significantly enriched in processes related to negative regulation of
+intercellular signal transduction (GO:1902532), protein catabolic process (GO:0030163),
+and hemopoiesis (GO:0030697).
+2. Cellular Component (CC):
+- Enrichment analysis revealed significant enrichment of DEGs in cellular components
+such as secretory granule lumen (GO:0034774), insulin receptor complex
+(GO:0005899), and membrane raft (GO:0045121).
+3. Molecular Function (MF):
+- DEGs were found to be enriched in molecular functions including protein kinase
+binding (GO:0019901), kinase activity (GO:0016301), and insulin-like growth factorreceptor binding (GO:0005159).
+B. KEGG Pathway Analysis:
+- KEGG pathway analysis identified significant associations of DEGs with pathways
+including Alzheimer's disease (hsa:05010), longevity regulation (hsa:04211), IL-17
+signaling pathway (hsa:04657), and prostate cancer (hsa:05215).
+C. Network Analysis(strng image, cluster 2 image)
+Network analysis tools, including STRING, MCODE, and CentiScape, were utilized to
+identify key functional interactions and hub genes within the differentially expressed
+gene network.
+Analysis Steps:
+1. PPI Network Construction:
+- The protein-protein interaction (PPI) network was constructed using STRING, resultingin a network with 215 nodes and 258 edges after removing nodes that could not
+interact with other nodes.
+2. Module Identification with MCODE:
+- MCODE was used to screen out the core genes that constitute the stable structure of
+the PPI network with degree cut‐off = 2, haircut on, node score cut‐off = 0:2,
+k score = 3, and maximum depth = 100. MCODE analysis was performed to identify
+densely connected regions (clusters) within the PPI network. A total of 2 clusters were
+generated, and 19 core genes were identified as part of these clusters.
+3. Centrality Analysis with CentiScape:
+- CentiScape plugin was used to compute centrality measures for the 19 core genes
+identified. Hub genes were defined as those with a degree value ≥ mean + 2 standard
+deviations (SD), and bottleneck genes were defined as those with a betweenness value
+≥ mean + 2 SD. From this analysis, 2 hub genes and 1 bottleneck gene were obtained.
+Core gene :- UBE2H,UBE2R2,UBE2E3,TRIP12,UBE3A,CASP8,BCL2L1, DCAF12,CEACAM8, MAPK14, ALAS2,APP, HP, LCN2, CXCL10,SLCGA1,TRIM58, LTF, STAT1
+Hub gene :- CASP8, BCL2L1
+Bottleneck gene :- BCL2L1. 
+Candidate Gene Selection:
+- Candidate gene were selected based on the intersection of the above three
+datasets (MCODE clusters(core genes) , hub genes, and bottleneck genes). The gene
+"BCL2L1" was identified as a candidate gene for further analysis.
